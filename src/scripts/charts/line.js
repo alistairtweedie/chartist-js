@@ -69,13 +69,13 @@
     showPoint: true,
     // If the line chart should draw an area
     showArea: false,
-    // The base for the area chart that will be used to close the area shape (is normally 0)    
+    // The base for the area chart that will be used to close the area shape (is normally 0)
     areaBase: 0,
     // Specify if the lines should be smoothed. This value can be true or false where true will result in smoothing using the default smoothing interpolation function Chartist.Interpolation.cardinal and false results in Chartist.Interpolation.none. You can also choose other smoothing / interpolation functions available in the Chartist.Interpolation module, or write your own interpolation function. Check the examples for a brief description.
     lineSmooth: true,
     // If the line chart should add a background fill to the .ct-grids group.
     showGridBackground: false,
-    // Overriding the natural low of the chart allows you to zoom in or limit the charts lowest displayed value    
+    // Overriding the natural low of the chart allows you to zoom in or limit the charts lowest displayed value
     low: undefined,
     // Overriding the natural high of the chart allows you to zoom in or limit the charts highest displayed value
     high: undefined,
@@ -154,7 +154,7 @@
     if (options.showGridBackground) {
       Chartist.createGridBackground(gridGroup, chartRect, options.classNames.gridBackground, this.eventEmitter);
     }
-    
+
     // Draw the series
     data.raw.series.forEach(function(series, seriesIndex) {
       var seriesElement = seriesGroup.elem('g');
@@ -213,8 +213,8 @@
             x2: pathElement.x + 0.01,
             y2: pathElement.y
           }, options.classNames.point).attr({
-            'ct:value': [pathElement.data.value.x, pathElement.data.value.y].filter(Chartist.isNum).join(','),
-            'ct:meta': pathElement.data.meta
+            'ct-value': [pathElement.data.value.x, pathElement.data.value.y].filter(Chartist.isNum).join(','),
+            'ct-meta': pathElement.data.meta
           });
 
           this.eventEmitter.emit('draw', {

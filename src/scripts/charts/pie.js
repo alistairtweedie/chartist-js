@@ -196,8 +196,8 @@
 
       // Adding the pie series value to the path
       pathElement.attr({
-        'ct:value': dataArray[i],
-        'ct:meta': Chartist.serialize(series.meta)
+        'ct-value': dataArray[i],
+        'ct-meta': Chartist.serialize(series.meta)
       });
 
       // If this is a donut, we add the stroke-width as style attribute

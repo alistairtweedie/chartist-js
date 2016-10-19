@@ -1,10 +1,12 @@
 # modules
 node_modules/
 site/bower_components/
+.grunt/
 
 # build
 .tmp/
 .public/
+_SpecRunner.html
 # dist/
 
 # generated

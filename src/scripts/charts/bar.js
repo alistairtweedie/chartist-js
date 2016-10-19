@@ -352,8 +352,8 @@
 
         // Create bar element
         bar = seriesElement.elem('line', positions, options.classNames.bar).attr({
-          'ct:value': [value.x, value.y].filter(Chartist.isNum).join(','),
-          'ct:meta': Chartist.getMetaData(series, valueIndex)
+          'ct-value': [value.x, value.y].filter(Chartist.isNum).join(','),
+          'ct-meta': Chartist.getMetaData(series, valueIndex)
         });
 
         this.eventEmitter.emit('draw', Chartist.extend({
