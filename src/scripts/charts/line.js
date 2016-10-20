@@ -161,8 +161,8 @@
 
       // Write attributes to series group element. If series name or meta is undefined the attributes will not be written
       seriesElement.attr({
-        'ct:series-name': series.name,
-        'ct:meta': Chartist.serialize(series.meta)
+        'ct-series-name': series.name,
+        'ct-meta': Chartist.serialize(series.meta)
       });
 
       // Use series class from series data or if not set generate one

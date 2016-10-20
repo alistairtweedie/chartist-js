@@ -154,7 +154,7 @@
 
       // If the series is an object and contains a name or meta data we add a custom attribute
       seriesGroups[i].attr({
-        'ct:series-name': series.name
+        'ct-series-name': series.name
       });
 
       // Use series class from series data or if not set generate one
